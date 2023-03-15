@@ -1,0 +1,120 @@
+/* Formulario */
+
+#contacto {
+    padding: 4rem;
+    border-top: 2px solid rgb(196, 196, 196);
+    border-bottom: 2px solid rgb(196, 196, 196);
+    background: url("/assets/imagenes/parque.jpg") no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    --bs-gutter-x: 0;
+}
+
+#contacto h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+form {
+    padding: 4rem;
+    background-color: white;
+}
+
+input:first-of-type {
+    margin-right: 2rem;
+}
+
+input {
+    margin-bottom: 4rem;
+    width: calc(50% - 2rem);
+}
+
+textarea {
+    width: calc(100% - 204px);
+    resize: none;
+}
+
+input,
+textarea {
+    background-color: transparent !important;
+    border: none;
+    border-bottom: 1px solid black;
+    padding: 0.4rem;
+    color: black;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-bottom: 3px solid black;
+}
+
+.btn-secondary {
+    margin: 0 2rem 2rem 2rem;
+    width: 140px;
+}
+
+.btn-secondary:focus {
+    background-color: #474c52;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: rgb(62, 62, 62);
+}
+
+input:focus:invalid,
+textarea:focus:invalid {
+    border-bottom: 2px solid red;
+}
+
+input:valid,
+textarea:valid {
+    border-bottom: 2px solid green;
+}
+
+
+@media screen and (max-width:680px) {
+    #contacto {
+        padding:0rem;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem;
+    }
+
+    input {
+        margin-bottom: 2rem;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        border: 1px solid black;
+        padding: 0.8rem;
+        border-radius: 0.5rem;
+    }
+
+    .btn-secondary {
+        margin: 2rem 0 0 0;
+    }
+
+    input:focus:invalid,
+    textarea:focus:invalid {
+        border: 2px solid red;
+    }
+
+    input:valid,
+    textarea:valid {
+        border: 2px solid green;
+    }
+}
+
+@media screen and (max-width:560px) {
+    form {
+        padding: 2rem;
+    }
+}

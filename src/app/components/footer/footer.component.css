@@ -1,0 +1,50 @@
+footer {
+    width: 100%;
+    background-color: var(--color-2);
+    color: var(--color-4);
+    --bs-gutter-x: 0;
+}
+
+.row {
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+a {
+    color: var(--color-3);
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+hr {
+    margin: 1.5rem 0;
+    color: var(--color-3);
+}
+
+p {
+    margin-bottom: 1.5rem !important;
+    color: var(--color-3);
+}
+
+@media screen and (max-width:460px) {
+    a {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width:316px) {
+    a {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.875rem;
+    }
+}

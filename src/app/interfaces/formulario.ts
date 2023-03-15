@@ -1,0 +1,1 @@
+export interface Formulario { nombre: string, correo: string, consulta: string };

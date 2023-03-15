@@ -1,0 +1,9 @@
+<section class="row" id="contacto">
+    <form class="col-lg-12 col-xl-6" (ngSubmit)="enviarFormulario();" [formGroup]="formData">
+        <h2>Contactate con nosotros</h2>
+        <input type="text" name="nombre" placeholder="Nombre" formControlName="nombre" required />
+        <input type="email" name="correo" placeholder="Correo" formControlName="correo" required />
+        <textarea rows="4" name="consulta" placeholder="Consulta" formControlName="consulta" required></textarea>
+        <button type="submit" class="btn btn-lg btn-secondary" [disabled]="formData.invalid" (click)="tiempo(formData)">Enviar</button>
+    </form>
+</section>

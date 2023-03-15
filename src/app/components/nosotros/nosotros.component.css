@@ -1,0 +1,20 @@
+section > div {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.inner-container {
+    width: 500px;
+}
+
+img {
+    width: 26%;
+}
+
+@media screen and (max-width:767px) {
+    img {
+        display:none;
+    }
+}
